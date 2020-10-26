@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--AULA_06-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //Manipulção String
+      var nome = window.prompt('Qual é seu nome?')
+
+      document.write(`Ola <strong>${nome}</strong>, Seu nome tem: ${nome.length} letras. <br>`)
+      document.write(`Seu nome em maiusculo é: ${nome.toUpperCase()}`)
+
+      //Moeda Formatada
+      var moeda = 15487.54
+      var moedaFormatada = moeda.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})
+
+      document.write('<br>' + moedaFormatada)
+    </script>
+</body>
+</html>
